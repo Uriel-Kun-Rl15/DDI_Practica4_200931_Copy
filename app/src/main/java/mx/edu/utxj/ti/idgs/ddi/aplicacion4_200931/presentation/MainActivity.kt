@@ -59,7 +59,7 @@ class MainActivity : ComponentActivity() {
 
         }
 
-        val imageview = findViewById<ImageView>(R.id.imageView7)
+       val imageview = findViewById<ImageView>(R.id.imageView7)
         imageview.setOnClickListener {
             // Crear la animación de brillo
             val scaleX = ObjectAnimator.ofFloat(imageview, "scaleX", 1.0f, 1.2f, 1.0f)
