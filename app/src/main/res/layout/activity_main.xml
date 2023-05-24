@@ -11,25 +11,24 @@
         android:layout_height="match_parent"
         android:visibility="visible"
         tools:visibility="visible"
-        android:background="@color/common_google_signin_btn_text_light_disabled">
+        android:background="@color/common_google_signin_btn_text_light_default">
 
 
-                <ImageView
-                    android:id="@+id/imageView7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="20dp"
-                    android:src="@drawable/maxresdefault" />
-
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/maxresdefault" />
 
         <TextView
             android:id="@+id/textView"
             style="@android:style/Widget.Material.TextView"
             android:layout_width="match_parent"
-            android:layout_height="52dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:fontFamily="@font/font2"
             android:text="200931"
-            android:layout_marginTop="10dp"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
