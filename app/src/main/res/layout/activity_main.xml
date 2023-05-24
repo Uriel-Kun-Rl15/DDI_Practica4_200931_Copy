@@ -27,7 +27,7 @@
             style="@android:style/Widget.Material.TextView"
             android:layout_width="match_parent"
             android:layout_height="52dp"
-            android:fontFamily="@font/pangolinregular"
+            android:fontFamily="@font/font2"
             android:text="200931"
             android:layout_marginTop="10dp"
             android:textAlignment="center"

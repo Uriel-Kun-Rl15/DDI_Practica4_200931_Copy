@@ -4,7 +4,12 @@
     android:fontStyle="normal"
     android:fontWeight="400"
     android:font="@font/pangolinregular"
-    >
+/>
 
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/font2"
+        >
 </font>
 </font-family>
