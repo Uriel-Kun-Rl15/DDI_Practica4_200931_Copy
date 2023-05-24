@@ -20,16 +20,16 @@
 
         <TextView
             android:id="@+id/textView"
+            style="@android:style/Widget.Material.TextView"
             android:layout_width="match_parent"
-            android:layout_height="35dp"
+            android:layout_height="52dp"
             android:fontFamily="cursive"
             android:text="200931"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
-            android:textStyle="bold"
-            android:typeface="monospace"
-            style="@style/TextViewStyle" />
+            android:textStyle="bold|italic"
+            android:typeface="monospace" />
 
     </FrameLayout>
 </LinearLayout>

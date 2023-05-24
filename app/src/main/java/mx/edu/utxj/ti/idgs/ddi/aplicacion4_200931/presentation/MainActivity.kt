@@ -9,6 +9,7 @@ package mx.edu.utxj.ti.idgs.ddi.aplicacion4_200931.presentation
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -40,7 +41,17 @@ class MainActivity : ComponentActivity() {
             val scaleY = ObjectAnimator.ofFloat(textView, "scaleY", 1.0f, 1.2f, 1.0f)
             val animatorSet = AnimatorSet()
             animatorSet.playTogether(scaleX, scaleY)
-            animatorSet.duration = 300
+            animatorSet.duration = 3000
+            animatorSet.start()}
+
+        val imageview = findViewById<ImageView>(R.id.imageView7)
+        imageview.setOnClickListener {
+            // Crear la animación de brillo
+            val scaleX = ObjectAnimator.ofFloat(imageview, "scaleX", 1.0f, 1.2f, 1.0f)
+            val scaleY = ObjectAnimator.ofFloat(imageview, "scaleY", 1.0f, 1.2f, 1.0f)
+            val animatorSet = AnimatorSet()
+            animatorSet.playTogether(scaleX, scaleY)
+            animatorSet.duration = 3000
             animatorSet.start()}
     }
 
