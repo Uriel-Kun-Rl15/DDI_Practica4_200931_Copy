@@ -7,12 +7,13 @@
 package mx.edu.utxj.ti.idgs.ddi.aplicacion4_200931.presentation
 
 import android.animation.AnimatorSet
+import android.animation.ArgbEvaluator
 import android.animation.ObjectAnimator
+import android.graphics.Color
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -28,6 +29,9 @@ import androidx.wear.compose.material.MaterialTheme
 import androidx.wear.compose.material.Text
 import mx.edu.utxj.ti.idgs.ddi.aplicacion4_200931.R
 import mx.edu.utxj.ti.idgs.ddi.aplicacion4_200931.presentation.theme.Aplicacion4_200931Theme
+import kotlin.time.DurationUnit
+import kotlin.time.toDuration
+
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,7 +46,18 @@ class MainActivity : ComponentActivity() {
             val animatorSet = AnimatorSet()
             animatorSet.playTogether(scaleX, scaleY)
             animatorSet.duration = 3000
-            animatorSet.start()}
+            animatorSet.start()
+
+
+            val colorAnim: ObjectAnimator = ObjectAnimator.ofInt(
+                textView, "textColor",
+                Color.RED, Color.GREEN
+            )
+            colorAnim.setEvaluator(ArgbEvaluator())
+            colorAnim.duration=5000
+            colorAnim.start()
+
+        }
 
         val imageview = findViewById<ImageView>(R.id.imageView7)
         imageview.setOnClickListener {
